@@ -76,7 +76,7 @@ class ContractController extends Controller
                      * De lo contrario devilvemos un error.
                      */
                     $validatorRate = $this->validator(
-                        $request->all(),
+                        $data,
                         Rate::$rules,
                         Rate::$messages
                     );
